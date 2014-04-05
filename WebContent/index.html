@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		   
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_mvi" theme -->
+
+
+		<script>
+				sap.ui.localResources("clubapp");
+				
+				//var app = new sap.m.App({id: "clubAppID", initialPage:"homeViewID"});
+				var homeView = sap.ui.view({id:"homeViewID", viewName:"clubapp.home", type:sap.ui.core.mvc.ViewType.JS});
+				//app.addPage(homePage);
+				//var twitterPage = sap.ui.view({id:"twitterViewID", viewName:"clubapp.twitterPage", type:sap.ui.core.mvc.ViewType.JS});
+				//app.addPage(twitterPage);
+				//var facebookPage = sap.ui.view({id:"facebookViewID", viewName:"clubapp.facebookPage", type:sap.ui.core.mvc.ViewType.JS});
+				//app.addPage(facebookPage);
+				//app.placeAt("content");
+				
+				
+				//var splitApp = new sap.m.SplitApp("clubAppID");
+				//splitApp.setMode("PopoverMode");
+				//or
+				//splitApp.setMode("StretchCompressMode");
+				//splitApp.setMode("ShowHideMode");
+				  
+				//splitApp.addMasterPage(homePage);
+				//splitApp.addDetailPage(twitterPage);
+				//splitApp.addDetailPage(facebookPage);
+				
+				homeView.placeAt("content");
+				
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
